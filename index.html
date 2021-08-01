@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>File Uploader</title>
+</head>
+<body ng-app="MyApp" ng-controller="FileUploder">
+    <div>
+        <table ="width:150%;border:solid;">
+            <tr>
+                <td>Select File</td>
+                <td>
+                    <input type="file" ng-model-instant id="fileToUpload" onchange="angular.element(this).scope().setFiles(this)" />
+                </td>
+                <td>
+                    <input type="button" value="Upload" ng-click="fnUpload();" />
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
